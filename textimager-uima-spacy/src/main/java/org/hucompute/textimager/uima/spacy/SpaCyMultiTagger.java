@@ -278,16 +278,16 @@ public class SpaCyMultiTagger extends SpaCyBase {
 				interpreter.exec("ents = [{'start_char': ent.start_char,'end_char': ent.end_char,'label': ent.label_}for ent in doc.ents]");
 
 				// Sentences
-				processSentences(aJCas, beginOffset);
+				//processSentences(aJCas, beginOffset);
 				
 				// Tokenizer
-				Map<Integer, Map<Integer, Token>> tokensMap = processToken(aJCas, beginOffset);
+				//Map<Integer, Map<Integer, Token>> tokensMap = processToken(aJCas, beginOffset);
 
 				// Tagger
-				processPOS(aJCas, beginOffset, tokensMap);
+				//processPOS(aJCas, beginOffset, tokensMap);
 
 				// PARSER
-				processDep(aJCas, beginOffset, tokensMap);
+				//processDep(aJCas, beginOffset, tokensMap);
 
 				// NER
 				processNER(aJCas, beginOffset);
