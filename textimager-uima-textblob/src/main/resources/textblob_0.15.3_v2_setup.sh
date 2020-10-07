@@ -43,18 +43,18 @@ else
 	echo "using predownloaded models"
 	pip install /resources/nlp/models/spacy/de_core_news_sm-2.3.0.tar.gz
 	pip install /resources/nlp/models/spacy/en_core_web_sm-2.3.0.tar.gz
-	pip install /resources/nlp/models/spacy/zh_core_web_sm-2.3.0.tar.gz
-	pip install jieba==0.42.1 pkuseg==0.0.25 SudachiPy==0.4.9 SudachiDict-core==20200722
-	pip install /resources/nlp/models/spacy/da_core_news_sm-2.3.0.tar.gz
-	pip install /resources/nlp/models/spacy/nl_core_news_sm-2.3.0.tar.gz
-	pip install /resources/nlp/models/spacy/fr_core_news_sm-2.3.0.tar.gz
-	pip install /resources/nlp/models/spacy/el_core_news_sm-2.3.0.tar.gz
-	pip install /resources/nlp/models/spacy/it_core_news_sm-2.3.0.tar.gz
-	pip install /resources/nlp/models/spacy/ja_core_news_sm-2.3.0.tar.gz
-	pip install /resources/nlp/models/spacy/lt_core_news_sm-2.3.0.tar.gz
-	pip install /resources/nlp/models/spacy/nb_core_news_sm-2.3.0.tar.gz
-	pip install /resources/nlp/models/spacy/pl_core_news_sm-2.3.0.tar.gz
-	pip install /resources/nlp/models/spacy/pt_core_news_sm-2.3.0.tar.gz
-	pip install /resources/nlp/models/spacy/ro_core_news_sm-2.3.0.tar.gz
-	pip install /resources/nlp/models/spacy/es_core_news_sm-2.3.0.tar.gz
+	#pip install /resources/nlp/models/spacy/zh_core_web_sm-2.3.0.tar.gz
+	#pip install jieba==0.42.1 pkuseg==0.0.25 SudachiPy==0.4.9 SudachiDict-core==20200722
+	#pip install /resources/nlp/models/spacy/da_core_news_sm-2.3.0.tar.gz
+	#pip install /resources/nlp/models/spacy/nl_core_news_sm-2.3.0.tar.gz
+	#pip install /resources/nlp/models/spacy/fr_core_news_sm-2.3.0.tar.gz
+	#pip install /resources/nlp/models/spacy/el_core_news_sm-2.3.0.tar.gz
+	#pip install /resources/nlp/models/spacy/it_core_news_sm-2.3.0.tar.gz
+	#pip install /resources/nlp/models/spacy/ja_core_news_sm-2.3.0.tar.gz
+	#pip install /resources/nlp/models/spacy/lt_core_news_sm-2.3.0.tar.gz
+	#pip install /resources/nlp/models/spacy/nb_core_news_sm-2.3.0.tar.gz
+	#pip install /resources/nlp/models/spacy/pl_core_news_sm-2.3.0.tar.gz
+	#pip install /resources/nlp/models/spacy/pt_core_news_sm-2.3.0.tar.gz
+	#pip install /resources/nlp/models/spacy/ro_core_news_sm-2.3.0.tar.gz
+	#pip install /resources/nlp/models/spacy/es_core_news_sm-2.3.0.tar.gz
 fi
