@@ -122,10 +122,10 @@ public class SpaCyMultiTagger extends SpaCyBase {
 				POS posAnno = (POS) aJCas.getCas().createAnnotation(posTag, begin, end);
 				posAnno.setPosValue(tagStr);
 				POSUtils.assignCoarseValue(posAnno);
-				
+
 				Token tokenAnno = tokensMap.get(begin).get(end);
 				tokenAnno.setPos(posAnno);
-				
+
 				posAnno.addToIndexes();
 			}
 		});
@@ -264,7 +264,7 @@ public class SpaCyMultiTagger extends SpaCyBase {
 			for (String text : texts) {
 				counter++;
 				System.out.println("processing text part " + counter + "/" + texts.size());
-				
+
 				// text to python interpreter
 				interpreter.set("text", (Object)text);
 				interpreter.exec("doc = nlp(text)");
@@ -278,16 +278,16 @@ public class SpaCyMultiTagger extends SpaCyBase {
 				interpreter.exec("ents = [{'start_char': ent.start_char,'end_char': ent.end_char,'label': ent.label_}for ent in doc.ents]");
 
 				// Sentences
-				//processSentences(aJCas, beginOffset);
-				
+				processSentences(aJCas, beginOffset);
+
 				// Tokenizer
-				//Map<Integer, Map<Integer, Token>> tokensMap = processToken(aJCas, beginOffset);
+				Map<Integer, Map<Integer, Token>> tokensMap = processToken(aJCas, beginOffset);
 
 				// Tagger
-				//processPOS(aJCas, beginOffset, tokensMap);
+				processPOS(aJCas, beginOffset, tokensMap);
 
 				// PARSER
-				//processDep(aJCas, beginOffset, tokensMap);
+				processDep(aJCas, beginOffset, tokensMap);
 
 				// NER
 				processNER(aJCas, beginOffset);
